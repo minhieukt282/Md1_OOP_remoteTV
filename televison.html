@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Css/televisionCss.css">
+
+
+
+</head>
+<body onload="display()">
+
+<div class="screen" >
+    <h4>Television</h4>
+    <h1 id="display"></h1>
+</div>
+<div>
+    <button onclick="nextChannelTV()">Next Channel</button>
+    <button onclick="backChannelTV()">Back Channel</button>
+    <input type="button" value="On" id="onOff" onclick="onOffScreen()" class="power">
+</div>
+<div class="remote">
+    <h3>REMOTE</h3>
+    <input type="number" min="1" max="20" id="channel" class="input">
+    <button onclick="getChannel()">OK</button>
+    <button onclick="nextChannel()">Next Channel</button>
+    <button onclick="backChannel()">Back Channel</button>
+    <button onclick="upVolume()">Up Volume</button>
+    <button onclick="downVolume()">Dowm Volume</button>
+</div>
+
+
+
+</body>
+</html>
+<script src="Js/televisionJs.js"></script>
+<script src="Js/remoteTvJs.js"></script>
+<script src="Js/mainJs.js"></script>
